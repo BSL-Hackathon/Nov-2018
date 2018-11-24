@@ -1,0 +1,11 @@
+{
+  "name": "jomsdapp",
+  "version": "0.0.1",
+  "description": "Descentralized model for activities creation and initiation of startups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jom's Dapp",
+  "license": "ISC"
+}

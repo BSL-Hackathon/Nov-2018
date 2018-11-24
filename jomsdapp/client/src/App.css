@@ -1,0 +1,96 @@
+* {
+  font-family: roboto;
+}
+.App {
+  text-align: center;
+}
+.nav {
+  height: 10vh;
+}
+.main {
+  height: 80vh;
+  width: 100%;
+  padding: 1em;
+  background-image: linear-gradient(  white 60%,  rgba(1,1,1,0.07) ); 
+}
+.acc {
+  background: rgb(216,0,52);
+  font-size:1.4em;
+  text-transform: uppercase;
+  padding: 0.5em 2em;
+  border-radius: 2em;
+  border: none;
+  box-shadow: 0px 0px 8px rgba(1,11,1,0.5) ; 
+  color: white;
+  margin:auto;
+  display: block;
+}
+.acc:hover {
+  background: crimson;
+  transition: .4s;
+}
+.up {
+  font-size: .6em;
+  color: green;
+}
+.vot {
+  font-size: 4em;
+  color: rgb(40,40,40);
+}
+.footer {
+  height: 10vh;
+}
+.pan-cont {
+  border-top: solid 1px grey;
+  height:100%;
+  padding: auto;
+}
+.pan {
+  display: block;
+  padding-top: 22%;
+  color: grey;
+  text-align: center;
+}
+.ls {
+  width: 99%;
+  padding: 1em;
+  box-shadow: 2px 2px 5px rgba(1,1,1,0.1);
+}
+.p1 {
+  padding: 1em;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+.brand-logo {
+  font-family: Roboto;
+
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+nav {
+
+  background: rgb(216,0,52);
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
