@@ -1,0 +1,264 @@
+[
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            },
+            {
+                "name": "_baseline",
+                "type": "uint64"
+            },
+            {
+                "name": "_price",
+                "type": "uint256"
+            },
+            {
+                "name": "_periodoDePago",
+                "type": "uint8"
+            },
+            {
+                "name": "_tasaDeInteres",
+                "type": "uint8"
+            }
+        ],
+        "name": "createNewBono",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            }
+        ],
+        "name": "setApprobe",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "constant": false,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            },
+            {
+                "name": "_risk",
+                "type": "uint8"
+            }
+        ],
+        "name": "setStatus",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "_dcv",
+                "type": "address"
+            },
+            {
+                "name": "_cmf",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "_hashedDoc",
+                "type": "bytes20"
+            },
+            {
+                "indexed": true,
+                "name": "_creationMoment",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "_solicitante",
+                "type": "address"
+            }
+        ],
+        "name": "Creacion",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "_hashedDoc",
+                "type": "bytes20"
+            },
+            {
+                "indexed": true,
+                "name": "_aprobationMoment",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "_solicitante",
+                "type": "address"
+            }
+        ],
+        "name": "Aprobacion",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "name": "_hashedDoc",
+                "type": "bytes20"
+            },
+            {
+                "indexed": true,
+                "name": "_aprobationMoment",
+                "type": "uint256"
+            },
+            {
+                "indexed": false,
+                "name": "_solicitante",
+                "type": "address"
+            }
+        ],
+        "name": "Verificacion",
+        "type": "event"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "CMF",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [],
+        "name": "DCV",
+        "outputs": [
+            {
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            }
+        ],
+        "name": "getPriceBono",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            }
+        ],
+        "name": "getRegistryDate",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            }
+        ],
+        "name": "getRisk",
+        "outputs": [
+            {
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "constant": true,
+        "inputs": [
+            {
+                "name": "_hashBono",
+                "type": "bytes20"
+            }
+        ],
+        "name": "getStatus",
+        "outputs": [
+            {
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "payable": false,
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
